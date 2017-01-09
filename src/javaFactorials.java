@@ -11,7 +11,7 @@ public class javaFactorials {
         int integer = sc.nextInt();
         while ((integer <= 10) || (integer > 0)) {
             System.out.println("you have chosen the number " + integer);
-            if (integer) {
+            if (10==10) {
                 System.out.println("Please try again");
             } else {
                 System.out.println("ERROR Please enter a valid age");
