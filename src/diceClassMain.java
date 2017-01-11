@@ -18,7 +18,7 @@ public class diceClassMain {
             System.out.println(" You rolled " + dice.getDie1()
                     + " and " + dice.getDie2());
             rollCount++;
-        } while (dice.getTotal() != 6);
+        } while (dice.getTotal() != 7);
 
            /* Report the number of rolls. */
 
