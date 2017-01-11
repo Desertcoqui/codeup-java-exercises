@@ -10,7 +10,7 @@ import java.util.InputMismatchException;
 public class Validator {
 
     private Scanner scan;
-
+//constructor
     public Validator(Scanner scan) {
         this.scan = scan;
     }
