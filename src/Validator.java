@@ -44,4 +44,22 @@ public class Validator {
 
         return userInt;
     }
+
+    public String getString(Scanner scan, String prompt) {
+
+        String userStringRequiredInput;
+
+        try {
+            System.out.println(prompt);
+            userStringRequiredInput = scan.next();
+            if (userStringRequiredInput.equalsIgnoreCase("yes") || userStringRequiredInput.equalsIgnoreCase("y")) {
+                throw new IllegalArgumentException("Error! Invalid input.");
+            }
+        } catch (Exception e) {
+            System.out.println("try again");
+            System.out.println(e.getMessage());
+            return getString(scan, prompt);
+        }
+        return userStringRequiredInput;
+    }
 }
